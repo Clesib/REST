@@ -1,0 +1,52 @@
+{
+  "CV": {
+    "nom" : "Sibut",
+    "prenom" : "Clément",
+    "tel" : "0651634281",
+    "biographie" : "Je m'appelle Clément Sibut, j'ai 20 ans et je suis étudiant en informatique à Polytech Nice. Si vous souhaitez me contacter vous pouvez m'appeler au 0651634280 ou alors cliquer sur \"Contact\" dans le menu.",
+    "formation" : [
+      {
+        "annee" : "2012",
+        "intitule" : "Bac S",
+        "description" : "Specialite SVT",
+        "lieu" : "Lycée Saint Marc Nivolas-Vermelle",
+        "image" : "images/marc.jpg"
+      },
+      {
+        "annee" : "2012-2014",
+        "intitule" : "IUT Informatique",
+        "description" : "J'ai lors de mes 2 années à l'IUT apppris énormément de choses en informatique que ce soit en programmation système , programmation web, bases de données mais également en économie et comptabilité.",
+        "lieu" : "IUT Lyon 1",
+        "image" : "images/iut.jpg"
+        },
+        {
+          "annee" : "2014-2015",
+          "intitule" : "Polytech Spécialité Informatique",
+          "description" : "Actuellement en première année du cycle d'ingénieur. J'espère pouvoir découvrir de nouveaux aspects de l'informatique que je n'avais pas étudié avant comme le développement d'application sur smartphone. Je souhaite également à terme trouver ma spécialisation. ",
+          "lieu" : "Sophia-Antipolis",
+          "image" : "images/polytech.jpg"
+        }
+        ],
+        "projets": [
+          {
+            "nom" : "Développement d'un lecteur audio",
+            "annee" : "2013-",
+            "description" : "Je développe sur mon temps libre un petit lecteur audio en C++ basé sur le framework Qt et la librairie audio BASS. Ce lecteur est capable de lire de nombreux formats comme le MP3, le Ogg, le MIDI ou encore l'AAC. Il peut également gérer les playlists dans de nombreux formats.",
+            "image" : "images/lecteur.jpg"
+          },
+          {
+              "nom" : "Labyrinthe",
+              "annee" : "2015",
+              "description" : "Dans le cadre du projet de fin de semestre de SI3, nous avons amélioré le projet Zool qui est un jeu permettant à la base au joueur de partir à l'aventure dans les locaux de Polytech en utilisant des commandes. Nous avons donc crée un labyrinthe pouvant acceuillir autant de bots que voulu. Ces bots doivent trouver la sortie du labyrinthe et pour cela évoluent à travers les différents pièges et étages du labyrinthes en évitant les monstres. A la fin des statistiques sont disponibles afin de savoir par exemple le nombre de bot ayant réussi.",
+              "image" : "images/laby02g.jpg"
+            },
+          {
+              "nom" : "Stage à Plebicom",
+              "annee" : "2014",
+              "description" : "Lors d'un stage effectué dans l'entreprise Plebicom, je me suis occupé du développement des services proposés par le site ainsi que de la fidélisation des clients. J'ai ainsi pu intégrer au site un système de gestion de coupons Amazon",
+              "image" : "images/ebuy.png"
+            }
+            ]
+
+          }
+        }

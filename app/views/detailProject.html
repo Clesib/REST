@@ -1,0 +1,49 @@
+<style>
+  body {
+    background-image: url("images/background.jpg");
+  }
+
+  tr {
+    height:35px;
+  }
+</style>
+<h2>Page du projet d'ID {{currentProject.id}} et de titre {{currentProject.title}}</h2>
+<h2>Modifier un projet</h2>
+<form novalidate class="simple-form" ng-submit="modify()">
+  <table>
+    <tr>
+      <td>Title: </td>
+      <td> <input type="text" ng-model="currentProject.title" /></td>
+    </tr>
+    <tr>
+      <td>Description: </td>
+      <td><input type="text" ng-model="currentProject.description" /></td>
+    </tr>
+    <tr>
+      <td>Year: </td>
+      <td><input type="number" ng-model="currentProject.year"  min="0" pattern="[0-9]*" required/></td>
+    </tr>
+  </table>
+  <input type="submit" value="Modifier" />
+</form>
+
+<h2>Liste des utilisateurs participant au projet</h2>
+<div class="CSSTableGenerator">
+<table style="width:100%">
+  <tr>
+    <td>Role</td>
+    <td>Name</td>
+    <td>Surname</td>
+    <td>Mail</td>
+    <td>Website</td>
+  </tr>
+
+  <tr ng-repeat="user in users  | orderBy:'+name' ">
+    <td>{{roles[$index].name}}</a></td>
+    <td><a ng-href="#/detail/{{user.id}}"> {{user.name}}</a></td>
+    <td>{{user.surname}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.website}}</td>
+  </tr>
+</table>
+</div>

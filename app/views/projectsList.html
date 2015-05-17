@@ -1,0 +1,47 @@
+<style>
+  body {
+    background-image: url("images/background.jpg");
+  }
+
+  tr {
+    height:35px;
+  }
+</style>
+
+<h1>Rechercher</h1>
+<table>
+  <tr>
+    <td>title : </td>
+    <td><input type="text" ng-model="search.title" /></td>
+  </tr>
+  <tr>
+    <td>Description : </td>
+    <td><input type="text" ng-model="search.description" /></td>
+  </tr>
+  <tr>
+    <td>Year : </td>
+    <td><input type="text" ng-model="search.year" /></td>
+  </tr>
+
+</table>
+
+
+<input type="submit" ng-click="" value="Rechercher" /><br />
+
+<div class="CSSTableGenerator">
+<table style="width:100%">
+  <tr>
+    <td>Title</td>
+    <td>description</td>
+    <td>Year</td>
+    <td> </td>
+  </tr>
+
+  <tr ng-repeat="project in projects  | orderBy:'+title' | filter:search">
+    <td><a ng-href="#/detailproject/{{project.id}}"> {{project.title}}</a></td>
+    <td>{{project.description}}</td>
+    <td>{{project.year}}</td>
+    <td><a href="."></a><img ng-src="images/cross.png" ng-click="deleteProject(project.id)" height="16" width="16" /></a></td>
+  </tr>
+</table>
+</div>

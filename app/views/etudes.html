@@ -1,0 +1,41 @@
+
+<style>
+
+  body {
+    background-image: url("images/background.jpg");
+  }
+  .projet {
+    background-color: rgba(37, 74, 147, 0.4);
+    border : 4px outset rgb(37, 74, 147);
+    box-shadow : 5px 5px 10px black;
+    border-radius : 10px;
+    margin-bottom : 20px;
+    text-color : black;
+    padding : 5px 5px 5px 5px;
+  }
+  .projet p {
+    font-size : 15px;
+    color : black;
+  }
+
+  .projet img {
+    display: block;
+    max-width: 500px;
+    max-height: 250px;
+    margin-bottom : 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+</style>
+
+
+<h2> Présentation de ma formation</h2>
+<div class = "projet" ng-repeat="formation in modele.CV.formation" >
+  <h3>{{formation.annee}} : {{formation.intitule}}</h3>
+  <img src="{{formation.image}}"/>
+  <p>{{formation.lieu}} - {{formation.description}}</p>
+</div>
+

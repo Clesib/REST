@@ -1,0 +1,54 @@
+<style>
+  body {
+    background-image: url("images/background.jpg");
+  }
+
+  tr {
+    height:35px;
+  }
+
+
+</style>
+
+<h1>Rechercher</h1>
+<table>
+    <tr>
+      <td>Name : </td>
+      <td><input type="text" ng-model="search.name" /></td>
+    </tr>
+    <tr>
+      <td>Surname : </td>
+      <td><input type="text" ng-model="search.surname" /></td>
+    </tr>
+    <tr>
+      <td>Mail : </td>
+      <td><input type="text" ng-model="search.email" /></td>
+    </tr>
+  <tr>
+    <td>Website : </td>
+    <td><input type="text" ng-model="search.website" /></td>
+  </tr>
+
+</table>
+
+
+<input type="submit" ng-click="" value="Rechercher" /><br />
+<div class="CSSTableGenerator">
+  <table style="width:100%">
+          <tr>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Mail</td>
+            <td>Website</td>
+            <td> </td>
+          </tr>
+
+         <tr ng-repeat="user in users  | orderBy:'+name' | filter:search">
+           <td><a ng-href="#/detail/{{user.id}}"> {{user.name}}</a></td>
+           <td>{{user.surname}}</td>
+           <td>{{user.email}}</td>
+           <td>{{user.website}}</td>
+           <td><a href="."></a><img ng-src="images/cross.png" ng-click="deleteUser(user.id)" height="16" width="16" /></a></td>
+         </tr>
+  </table>
+</div>

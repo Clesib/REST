@@ -1,0 +1,230 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bouton_menu {
+  background: #051942;
+  background-image: -webkit-linear-gradient(top, #051942, #166494);
+  background-image: -moz-linear-gradient(top, #051942, #166494);
+  background-image: -ms-linear-gradient(top, #051942, #166494);
+  background-image: -o-linear-gradient(top, #051942, #166494);
+  background-image: linear-gradient(to bottom, #051942, #166494);
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.bouton_menu:hover {
+  background: #166494;
+  background-image: -webkit-linear-gradient(top, #166494, #051942);
+  background-image: -moz-linear-gradient(top, #166494, #051942);
+  background-image: -ms-linear-gradient(top, #166494, #051942);
+  background-image: -o-linear-gradient(top, #166494, #051942);
+  background-image: linear-gradient(to bottom, #166494, #051942);
+  text-decoration: none;
+}
+
+#menu
+{
+  list-style-type: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom : 50px;
+  width: 430em;
+}
+
+#menu li          /*Liste des boutons du menu */
+{
+  text-decoration:none;
+  float: left;
+  margin: 0;
+  border: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top : 5px;
+  padding-bottom : 5px;
+  text-align: center;
+  color: black;
+}
+
+#menu  li a:hover, #menu  li a:link
+{
+  text-decoration:none;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+  text-align: center;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.CSSTableGenerator {
+  margin:0px;padding:0px;
+  margin-top : 15px;
+  width:100%;
+  box-shadow: 10px 10px 5px #888888;
+  border:1px solid #ffffff;
+
+  -moz-border-radius-bottomleft:0px;
+  -webkit-border-bottom-left-radius:0px;
+  border-bottom-left-radius:0px;
+
+  -moz-border-radius-bottomright:0px;
+  -webkit-border-bottom-right-radius:0px;
+  border-bottom-right-radius:0px;
+
+  -moz-border-radius-topright:0px;
+  -webkit-border-top-right-radius:0px;
+  border-top-right-radius:0px;
+
+  -moz-border-radius-topleft:0px;
+  -webkit-border-top-left-radius:0px;
+  border-top-left-radius:0px;
+}.CSSTableGenerator table{
+   border-collapse: collapse;
+   border-spacing: 0;
+   width:100%;
+   height:100%;
+   margin:0px;padding:0px;
+ }.CSSTableGenerator tr:last-child td:last-child {
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+  }
+.CSSTableGenerator table tr:first-child td:first-child {
+  -moz-border-radius-topleft:0px;
+  -webkit-border-top-left-radius:0px;
+  border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+  -moz-border-radius-topright:0px;
+  -webkit-border-top-right-radius:0px;
+  border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+   -moz-border-radius-bottomleft:0px;
+   -webkit-border-bottom-left-radius:0px;
+   border-bottom-left-radius:0px;
+ }.CSSTableGenerator tr:hover td{
+    background-color:#d3e9ff;
+
+
+  }
+.CSSTableGenerator td{
+  vertical-align:middle;
+
+  background-color:#aad4ff;
+
+  border:1px solid #ffffff;
+  border-width:0px 1px 1px 0px;
+  text-align:left;
+  padding:7px;
+  font-size:12px;
+  font-family:Arial;
+  font-weight:normal;
+  color:#000000;
+}.CSSTableGenerator tr:last-child td{
+   border-width:0px 1px 0px 0px;
+ }.CSSTableGenerator tr td:last-child{
+    border-width:0px 0px 1px 0px;
+  }.CSSTableGenerator tr:last-child td:last-child{
+     border-width:0px 0px 0px 0px;
+   }
+.CSSTableGenerator tr:first-child td{
+  background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
+  background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
+
+  background-color:#0057af;
+  border:0px solid #ffffff;
+  text-align:center;
+  border-width:0px 0px 1px 1px;
+  font-size:16px;
+  font-family:Arial;
+  font-weight:bold;
+  color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+  background:-o-linear-gradient(bottom, #0057af 5%, #0057af 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #0057af) );
+  background:-moz-linear-gradient( center top, #0057af 5%, #0057af 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#0057af");	background: -o-linear-gradient(top,#0057af,0057af);
+
+  background-color:#0057af;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+  border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+  border-width:0px 0px 1px 1px;
+}

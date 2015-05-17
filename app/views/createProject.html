@@ -1,0 +1,28 @@
+<style>
+  body {
+    background-image: url("images/background.jpg");
+  }
+
+  tr {
+    height:35px;
+  }
+</style>
+
+<h1>Ajouter un projet</h1>
+<form novalidate class="simple-form" ng-submit="create()">
+  <table>
+    <tr>
+      <td>Title: </td>
+      <td><input type="text" ng-model="project.title" /></td>
+    </tr>
+    <tr>
+      <td>Description: </td>
+      <td><input type="text" ng-model="project.description" /></td>
+    </tr>
+    <tr>
+      <td>Year: </td>
+      <td><input type="number" ng-model="project.year"  min="0" pattern="[1-8][0-9]" required/></td>
+    </tr>
+  </table>
+  <input type="submit" value="Créer" />
+</form>

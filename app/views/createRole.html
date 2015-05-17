@@ -1,0 +1,28 @@
+<style>
+  body {
+    background-image: url("images/background.jpg");
+  }
+
+  tr {
+    height:35px;
+  }
+</style>
+
+<h1>Créer un role</h1>
+<form novalidate class="simple-form" ng-submit="create()">
+  <table>
+    <tr>
+      <td>Id Utilisateur: </td>
+      <td><input type="text" ng-model="role.user" /></td>
+    </tr>
+    <tr>
+      <td>Id Projet: </td>
+      <td><input type="text" ng-model="role.project" /></td>
+    </tr>
+    <tr>
+      <td>Nom du role: </td>
+      <td><input type="text" ng-model="role.name"/></td>
+    </tr>
+  </table>
+  <input type="submit" value="Créer" />
+</form>
